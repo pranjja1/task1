@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+.container {
+    position: absolute;
+    top: 63px;
+    right: 30px;
+    width: 716px; /* Adjust the width as needed */
+    height: 553px; /* 100% of the viewport height */
+    background-color:black; /* Optional background color for the container */
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center; /* Center vertically */
+}
+
+.github {
+    position: absolute;
+    top: 55px;
+    right: 180px;
+    width: 5px; /* Adjust the width as needed */
+    height: 2px; /* 100% of the viewport height */
+    background-color:black; /* Optional background color for the container */
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center; /* Center vertically */
+}
+.linkedin{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center; 
+    position: absolute;
+    top: 55px;
+    right: 90px;
+    width: 5px; /* Adjust the width as needed */
+    height: 2px;
+}
+.arrow{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center; 
+    position: absolute;
+    bottom: 45px;
+    right: 90px;
+    width: 5px; /* Adjust the width as needed */
+    height: 2px;
+}
+p{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center; 
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    top: 37px;
+    right: 270px;
+    width: 5px;
+    height: 2px;
+}
+
+.pd{
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end; /* Align the image to the right */
+    align-items: center; 
+    position: absolute;
+    font-size: 41px;
+    top: 1px;
+    left: 160px;
+    display: inline-block;
+}
+/* Style for the text at the bottom left */
+.pranj {
+    font-family: sans-serif;
+    font-size: 18px;
+    position: absolute;
+    bottom: 93px;
+    left: 161px;
+    padding: 10px;
+    background-color:black;
+    color:white;
+}
+.projects{
+    font-size: 18px;
+    position: absolute;
+    bottom: 50px;
+    left: 632px;
+    align-self: center;
+    align-items: center;
+    background-color:black;
+    color:white;
+}
+.arrow{
+    position: absolute;
+    bottom: 40px;
+    left: 682px;
+    align-self: center;
+    align-items: center;
+    background-color:black;
+    color:white;
+}
+.mean{
+    font-family: sans-serif;
+    font-size: 88px;
+    position: absolute;
+    top: 205px;
+    left: 146px;
+    padding: 10px;
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    display: inline-block;
+}
+.word{
+    font-family: sans-serif;
+    font-size: 88px;
+    position: absolute;
+    top: 203px;
+    left: 469px;
+    padding: 10px;
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    
+   
+            cursor: pointer;
+    
+}
+.exp{
+    font-family: sans-serif;
+    font-size: 88px;
+    position: absolute;
+    top: 327px;
+    left: 146px;
+    padding: 10px;
+    background-color:black;
+    color:white;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+}
+    </style>
+<body>
+    <div class="container">
+        <img src="C:\Users\pranj\OneDrive\Desktop\hp.png" width="370px"height="370px">
+    </div>
+  
+   <a href="https://www.linkedin.com" class="linkedin">
+    <img src="C:\Users\pranj\OneDrive\Desktop\lin.png" alt="Button Image">
+    <a href="https://github.com" class="github">
+        <img src="C:\Users\pranj\OneDrive\Desktop\git.png" alt="Button Image">
+</a>
+<p>Resume</p>
+<p id="pd"class="pd">PD</p>
+</div>
+<div class="pranj">
+    Pranjal Desai / SE - IT
+</div>
+<div class="projects">
+    Project
+</div>
+<a href="https://github.com" class="arrow">
+    <img src="C:\Users\pranj\OneDrive\Desktop\arrow.png" alt="Button Image">
+</a>
+<div class="mean">
+    I    create
+</div>
+
+
+    <div class="word" id="changingWord">playful</div>
+
+    <script>
+        const wordElement = document.getElementById('changingWord');
+        const colors = ['#ADD8E6', '#32CD32', '#FFFFE0','#E6E6FA','#FFD700','#FFC0CB','#FFB6C1'];
+        let currentColorIndex = 0;
+
+        function changeColor() {
+            wordElement.style.color = colors[currentColorIndex];
+            currentColorIndex = (currentColorIndex + 1) % colors.length;
+        }
+
+        // Initial color change
+        changeColor();
+
+        // Change the color every 30 seconds
+        setInterval(changeColor, 2500);
+    </script>
+</p>
+<div class="exp">
+    experiences
+</div>
+
+
+</body>
+</html>
